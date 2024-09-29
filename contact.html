@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contactpage">
+    <header>
+        <h1><b>Book & Bliss</b></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">About</a></li>
+            <li><a href="booking.html">Hotels</a></li>
+            <li><a href="contact.html">Booking</a></li>
+        </ul>
+    </header>
+    <div class="line"></div>
+    <div class="contact">
+        <h6>Hotel Booking</h6>
+        <div class="enter">
+            <label for="hotel">Select Hotel:</label>
+            <select id="hotel" name="hotel">
+                <option value="icehotel">Conrad Maldives</option>
+                <option value="giraffehotel">Giraffe Mandor</option>
+                <option value="seahotel">Ice Hotel</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" required>
+
+            <label for="ages">Ages of People:</label>
+            <input type="text" id="ages" name="ages" placeholder="ex: 25, 30, 15" required>
+
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" min="1" max="10" required>
+
+            <button class="submit" type="submit">Book Now</button>
+        </div>
+        </div>
+</body>
+</html>
